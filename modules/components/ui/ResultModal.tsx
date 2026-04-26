@@ -13,12 +13,12 @@ interface ResultModalProps {
 }
 
 const ResultModal = ({ isOpen, onClose, title, content, isLoading }: ResultModalProps) => {
-    const t = useTranslations("ChatRoomPage.widget") // Hoáº·c dÃ¹ng key riÃªng náº¿u cáº§n
+    const t = useTranslations("ChatRoomPage.widget") 
 
     return (
         <AnimatePresence>
             {isOpen && (
-                <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
+                <div className="fixed inset-0 z-200 flex items-center justify-center p-4">
                     {/* Backdrop */}
                     <motion.div
                         initial={{ opacity: 0 }}
@@ -38,7 +38,7 @@ const ResultModal = ({ isOpen, onClose, title, content, isLoading }: ResultModal
                         {/* Header */}
                         <div className="flex items-center justify-between p-6 border-b border-mystic-gold/10">
                             <h2 className="text-2xl font-serif gold-text tracking-wide">
-                                {title || "ðŸ”® Káº¿t quáº£ tráº£i bÃ i"}
+                                {title || "Kết quả trả lời"}
                             </h2>
                             <button
                                 onClick={onClose}
@@ -49,7 +49,7 @@ const ResultModal = ({ isOpen, onClose, title, content, isLoading }: ResultModal
                         </div>
 
                         {/* Body */}
-                        <div className="flex-1 p-8 overflow-y-auto custom-scrollbar min-h-[200px]">
+                        <div className="flex-1 p-8 overflow-y-auto custom-scrollbar min-h-50">
                             {isLoading && !content ? (
                                 <div className="flex flex-col items-center justify-center h-full gap-4 py-10">
                                     <motion.div
@@ -61,7 +61,7 @@ const ResultModal = ({ isOpen, onClose, title, content, isLoading }: ResultModal
                                         transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
                                         className="w-16 h-16 border-2 border-mystic-gold border-t-transparent rounded-full shadow-[0_0_20px_rgba(212,175,55,0.4)]"
                                     />
-                                    <p className="text-mystic-gold/80 animate-pulse font-serif tracking-widest">Äang giáº£i mÃ£ thÃ´ng Ä‘iá»‡p...</p>
+                                    <p className="text-mystic-gold/80 animate-pulse font-serif tracking-widest">Đang giải mã thông điệp...</p>
                                 </div>
                             ) : (
                                 <div className="prose prose-invert max-w-none">
@@ -80,7 +80,7 @@ const ResultModal = ({ isOpen, onClose, title, content, isLoading }: ResultModal
                                 onClick={onClose}
                                 className="px-10 py-3 rounded-full bg-linear-to-r from-mystic-purple to-mystic-indigo text-white font-bold tracking-widest shadow-lg border border-mystic-gold/20"
                             >
-                                ÄÃ“NG
+                                Đóng
                             </motion.button>
                         </div>
 
