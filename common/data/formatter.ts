@@ -1,5 +1,5 @@
 
-import { TarotSpreadCard } from "../../commom/types/tarot"
+import { TarotSpreadCard } from "@/common/types/tarot"
 
 const formatCard = (spreadCards: TarotSpreadCard[]) => {
     return spreadCards.map((item, index) => ({
