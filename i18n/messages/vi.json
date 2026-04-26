@@ -1,0 +1,243 @@
+{
+    "ChatRoomPage": {
+        "title": "Phòng nhắn tin",
+        "description": "Hãy thoải mái chia sẻ ý kiến, gợi ý, câu hỏi hoặc bất cứ điều gì khác!",
+        "placeholder": "Nhập tin nhắn của bạn...",
+        "sign_in": {
+            "title": "Vui lòng đăng nhập để tham gia trò chuyện. Đừng lo lắng, dữ liệu của bạn được an toàn.",
+            "label": "Đăng nhập với",
+            "signed_label": "Đã đăng nhập với tên",
+            "sign_out_label": "Đăng xuất"
+        },
+        "widget": {
+            "title": "Phòng trò chuyện",
+            "tooltip_title": "Mở phòng trò chuyện",
+            "tooltip_minimize": "Thu nhỏ",
+            "tooltip_signout": "Đăng xuất",
+            "tooltip_settings": "Cài đặt",
+            "settings_title": "Cài đặt",
+            "settings_language": "Ngôn ngữ",
+            "lang_vi": "Tiếng Việt",
+            "lang_en": "Tiếng Anh",
+            "replying_to": "Đang trả lời",
+            "notif": {
+                "signin_required": "Vui lòng đăng nhập để trả lời",
+                "send_success": "Gửi tin nhắn thành công",
+                "send_failed": "Gửi tin nhắn thất bại",
+                "delete_success": "Xóa tin nhắn thành công",
+                "delete_failed": "Xóa tin nhắn thất bại"
+            },
+            "provider_google": "Google",
+            "provider_github": "Github"
+        }
+    },
+
+    "Hero": {
+        "journey": "Hành trình Tarot",
+        "title": "Khám Phá \n Vận Mệnh",
+        "description": "Khơi mở trực giác, giải mã tình yêu, sự nghiệp và tương lai của bạn qua trải bài tarot đầy huyền bí.",
+        "button_reading": "Xem Trải Bài Ngay",
+        "button_meaning": "Khám Phá Ý Nghĩa"
+    },
+
+    "Featured": {
+        "title": "Trải Bài Đặc Biệt",
+        "description": "Những trải bài được thiết kế riêng để giải đáp mọi khía cạnh trong cuộc sống của bạn, từ cảm xúc đến sự nghiệp.",
+        "start_now": "Bắt đầu ngay",
+        "love": {
+            "title": "Tình Yêu",
+            "desc": "Khám phá chuyện tình cảm và mối quan hệ lứa đôi."
+        },
+        "work": {
+            "title": "Sự Nghiệp",
+            "desc": "Định hướng công việc và lộ trình thăng tiến."
+        },
+        "finance": {
+            "title": "Tài Chính",
+            "desc": "Nhận biết vận may và cách quản lý tài lộc."
+        },
+        "health": {
+            "title": "Sức Khỏe",
+            "desc": "Dự đoán xu hướng và những biến chuyển sắp tới."
+        }
+    },
+
+    "Works": {
+        "title": "Quy Trình Nhận Giải",
+        "step1": {
+            "title": "Chọn chủ đề",
+            "desc": "Lựa chọn lĩnh vực bạn đang băn khoăn (Tình yêu, công việc, tài chính...)"
+        },
+        "step2": {
+            "title": "Rút bài",
+            "desc": "Tập trung tâm trí và sử dụng trực giác của bạn để chọn những lá bài."
+        },
+        "step3": {
+            "title": "Nhận giải mã",
+            "desc": "Lắng nghe những thông điệp huyền bí và lời khuyên từ Tarot."
+        }
+    },
+
+    "Final": {
+        "title": "Sẵn Sàng Mở Cánh Cửa?",
+        "description": "Đừng để những băn khoăn cản bước chân bạn. Những lá bài đang chờ đợi để kể cho bạn nghe câu chuyện của chính mình.",
+        "button": "Rút Bài Miễn Phí Ngay"
+    },
+
+    "Tarot": {
+        "the_fool": {
+            "name": "Kẻ Khờ",
+            "meaning": {
+                "upright": "Khởi đầu mới, tự do, ngây thơ",
+                "reversed": "Bốc đồng, liều lĩnh"
+            }
+        },
+        "the_magician": {
+            "name": "Nhà Ảo Thuật",
+            "meaning": {
+                "upright": "Quyền năng, kỹ năng, hành động",
+                "reversed": "Thao túng, ảo tưởng"
+            }
+        },
+        "the_high_priestess": {
+            "name": "Nữ Tư Tế",
+            "meaning": {
+                "upright": "Trực giác, bí ẩn",
+                "reversed": "Che giấu, mất kết nối nội tâm"
+            }
+        },
+        "the_empress": {
+            "name": "Nữ Hoàng",
+            "meaning": {
+                "upright": "Nuôi dưỡng, sung túc",
+                "reversed": "Phụ thuộc, kiểm soát quá mức"
+            }
+        },
+        "the_emperor": {
+            "name": "Hoàng Đế",
+            "meaning": {
+                "upright": "Quyền lực, cấu trúc",
+                "reversed": "Kiểm soát, cứng nhắc"
+            }
+        },
+        "the_hierophant": {
+            "name": "Giáo Hoàng",
+            "meaning": {
+                "upright": "Truyền thống, dẫn dắt",
+                "reversed": "Nổi loạn, khác biệt"
+            }
+        },
+        "the_lovers": {
+            "name": "Những Người Yêu",
+            "meaning": {
+                "upright": "Tình yêu, hòa hợp",
+                "reversed": "Mất cân bằng, lệch hướng"
+            }
+        },
+        "the_chariot": {
+            "name": "Cỗ Xe",
+            "meaning": {
+                "upright": "Kiểm soát, chiến thắng",
+                "reversed": "Mất phương hướng"
+            }
+        },
+        "strength": {
+            "name": "Sức Mạnh",
+            "meaning": {
+                "upright": "Can đảm, kiên nhẫn",
+                "reversed": "Thiếu tự tin"
+            }
+        },
+        "the_hermit": {
+            "name": "Ẩn Sĩ",
+            "meaning": {
+                "upright": "Tìm kiếm nội tâm",
+                "reversed": "Cô lập"
+            }
+        },
+        "wheel_of_fortune": {
+            "name": "Bánh Xe Số Phận",
+            "meaning": {
+                "upright": "May mắn, định mệnh",
+                "reversed": "Xui rủi"
+            }
+        },
+        "justice": {
+            "name": "Công Lý",
+            "meaning": {
+                "upright": "Công bằng, sự thật",
+                "reversed": "Thiếu trung thực"
+            }
+        },
+        "the_hanged_man": {
+            "name": "Người Treo Ngược",
+            "meaning": {
+                "upright": "Buông bỏ, hy sinh",
+                "reversed": "Trì hoãn"
+            }
+        },
+        "death": {
+            "name": "Cái Chết",
+            "meaning": {
+                "upright": "Chuyển đổi, kết thúc để bắt đầu mới",
+                "reversed": "Chống lại thay đổi"
+            }
+        },
+        "temperance": {
+            "name": "Tiết Chế",
+            "meaning": {
+                "upright": "Cân bằng, điều độ",
+                "reversed": "Mất cân bằng"
+            }
+        },
+        "the_devil": {
+            "name": "Ác Quỷ",
+            "meaning": {
+                "upright": "Ràng buộc, nghiện ngập",
+                "reversed": "Giải thoát, buông bỏ"
+            }
+        },
+        "the_tower": {
+            "name": "Tòa Tháp",
+            "meaning": {
+                "upright": "Biến động bất ngờ",
+                "reversed": "Tránh né khủng hoảng"
+            }
+        },
+        "the_star": {
+            "name": "Ngôi Sao",
+            "meaning": {
+                "upright": "Hy vọng, niềm tin",
+                "reversed": "Tuyệt vọng"
+            }
+        },
+        "the_moon": {
+            "name": "Mặt Trăng",
+            "meaning": {
+                "upright": "Ảo tưởng, sợ hãi",
+                "reversed": "Rõ ràng"
+            }
+        },
+        "the_sun": {
+            "name": "Mặt Trời",
+            "meaning": {
+                "upright": "Niềm vui, thành công",
+                "reversed": "Niềm vui tạm thời bị che khuất"
+            }
+        },
+        "judgement": {
+            "name": "Phán Xét",
+            "meaning": {
+                "upright": "Thức tỉnh",
+                "reversed": "Nghi ngờ bản thân"
+            }
+        },
+        "the_world": {
+            "name": "Thế Giới",
+            "meaning": {
+                "upright": "Hoàn thành",
+                "reversed": "Chưa trọn vẹn"
+            }
+        }
+    }
+}

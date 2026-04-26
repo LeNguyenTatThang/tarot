@@ -1,0 +1,217 @@
+/* ===== GALAXY BACKGROUND ===== */
+
+.galaxy {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, #0b0b2a, #000);
+  overflow: hidden;
+}
+
+
+/* ===== BACKGROUND STARS ===== */
+
+.bg-star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+/* random positions */
+
+.bg-star:nth-child(1) { top:10%; left:20% }
+.bg-star:nth-child(2) { top:30%; left:70% }
+.bg-star:nth-child(3) { top:50%; left:40% }
+.bg-star:nth-child(4) { top:80%; left:10% }
+.bg-star:nth-child(5) { top:60%; left:90% }
+.bg-star:nth-child(6) { top:15%; left:50% }
+.bg-star:nth-child(7) { top:75%; left:65% }
+.bg-star:nth-child(8) { top:35%; left:15% }
+.bg-star:nth-child(9) { top:90%; left:40% }
+.bg-star:nth-child(10) { top:20%; left:85% }
+
+.bg-star:nth-child(odd) {
+  animation-delay: 1s;
+}
+
+.bg-star:nth-child(even) {
+  animation-delay: 2s;
+}
+
+@keyframes twinkle {
+  0% { opacity:.2 }
+  50% { opacity:1 }
+  100% { opacity:.2 }
+}
+
+
+/* ===== GALAXY CORE ===== */
+
+.galaxy-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 260px;
+  height: 260px;
+
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(120,80,255,0.6),
+    rgba(60,0,120,0.3),
+    transparent
+  );
+
+  filter: blur(40px);
+
+  animation: rotateGalaxy 20s linear infinite;
+}
+
+@keyframes rotateGalaxy {
+  from { transform: translate(-50%, -50%) rotate(0deg) }
+  to { transform: translate(-50%, -50%) rotate(360deg) }
+}
+
+
+/* ===== CONSTELLATION ===== */
+
+.constellation {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 200px;
+  height: 100px;
+
+  transform: translate(-50%, -50%);
+}
+
+
+/* constellation stars */
+
+.c-star {
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  background: white;
+  border-radius: 50%;
+
+  opacity: .2;
+
+  animation: glow 1.6s infinite ease-in-out;
+}
+
+
+/* random constellation positions */
+
+.c-star:nth-child(1) { top:10px; left:20px; animation-delay:0s }
+.c-star:nth-child(2) { top:40px; left:60px; animation-delay:.2s }
+.c-star:nth-child(3) { top:70px; left:30px; animation-delay:.4s }
+.c-star:nth-child(4) { top:20px; left:120px; animation-delay:.6s }
+.c-star:nth-child(5) { top:80px; left:150px; animation-delay:.8s }
+.c-star:nth-child(6) { top:30px; left:180px; animation-delay:1s }
+.c-star:nth-child(7) { top:60px; left:100px; animation-delay:1.2s }
+
+
+@keyframes glow {
+
+  0% {
+    opacity:.2;
+    transform:scale(.8);
+  }
+
+  50% {
+    opacity:1;
+    transform:scale(1.6);
+  }
+
+  100% {
+    opacity:.2;
+    transform:scale(.8);
+  }
+
+}
+
+/* constellation lines */
+
+.line{
+  position:absolute;
+  height:1px;
+  background:white;
+  opacity:.5;
+  transform-origin:left center;
+  animation:lineGlow 2s infinite ease-in-out;
+}
+
+@keyframes lineGlow{
+  0%{opacity:.1}
+  50%{opacity:1}
+  100%{opacity:.1}
+}
+
+/* 1 -> 2 */
+
+.l1{
+  top:14px;
+  left:24px;
+  width:50px;
+  transform:rotate(37deg);
+  animation-delay:.2s;
+}
+
+/* 2 -> 3 */
+
+.l2{
+  top:44px;
+  left:64px;
+  width:40px;
+  transform:rotate(136deg);
+  animation-delay:.4s;
+}
+
+/* 3 -> 4 */
+
+.l3{
+  top:75px;
+  left:34px;
+  width:100px;
+  transform:rotate(-30deg);
+  animation-delay:.6s;
+}
+
+/* 4 -> 5 */
+
+.l4{
+  top:24px;
+  left:124px;
+  width:45px;
+  transform:rotate(115deg);
+  animation-delay:.8s;
+}
+
+/* 5 -> 6 */
+
+.l5{
+  top:84px;
+  left:155px;
+  width:60px;
+  transform:rotate(-60deg);
+  animation-delay:1s;
+}
+
+/* 6 -> 7 */
+
+.l6{
+  top:31px;
+  left:186px;
+  width:90px;
+  transform:rotate(158deg);
+  animation-delay:1.2s;
+}

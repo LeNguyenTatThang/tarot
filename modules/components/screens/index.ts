@@ -1,0 +1,5 @@
+export { default as FinanceScreen } from "./FinanceScreen"
+export { default as HealthScreen } from "./HealthScreen"
+export { default as Home } from "./Home"
+export { default as LoveScreen } from "./LoveScreen"
+export { default as WorkScreen } from "./WorkScreen"

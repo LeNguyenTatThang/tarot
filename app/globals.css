@@ -24,3 +24,114 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000 url("https://i.imgur.com/YKY28eT.png") repeat top center;
+  z-index: -3;
+}
+
+.twinkling {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent url("https://i.imgur.com/XYMF4ca.png") repeat top center;
+  animation: moveStars 200s linear infinite;
+  z-index: -2;
+}
+
+@keyframes moveStars {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+
+@keyframes spinEarth {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.spin-earth {
+  animation: spinEarth 6s linear infinite;
+  transform-style: preserve-3d;
+  rotate: 45deg;
+}
+
+@keyframes flyToBottom {
+  to {
+    transform: translate(calc(50vw - 50%), calc(100vh - 180px));
+    opacity: 0.9;
+    scale: 1.1;
+  }
+}
+
+:root {
+  --background: #0a0515;
+  --foreground: #f0e6ff;
+  --mystic-purple: #6b21a8;
+  --mystic-indigo: #312e81;
+  --mystic-gold: #d4af37;
+  --mystic-silver: #c0c0c0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-mystic-purple: var(--mystic-purple);
+  --color-mystic-indigo: var(--mystic-indigo);
+  --color-mystic-gold: var(--mystic-gold);
+  --color-mystic-silver: var(--mystic-silver);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-cinzel);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+  margin-right: 10px;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.5), 0 0 20px rgba(168, 85, 247, 0.3);
+}
+
+.gold-text {
+  background: linear-gradient(to bottom, #d4af37 0%, #f7e08a 50%, #a67c00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-morphism {
+  background: rgba(10, 5, 21, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Hide default scrollbar completely */
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+}
+
+html {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}

@@ -1,0 +1,243 @@
+{
+    "ChatRoomPage": {
+        "title": "Chat Room",
+        "description": "Feel free to share your thoughts, suggestions, questions, or anything else!",
+        "placeholder": "Type your message...",
+        "sign_in": {
+            "title": "Please sign in to join the conversation.",
+            "label": "Sign in with",
+            "signed_label": "Signed in as",
+            "sign_out_label": "Sign out"
+        },
+        "widget": {
+            "title": "Chat Room",
+            "tooltip_title": "Open Chat Room",
+            "tooltip_minimize": "Minimize",
+            "tooltip_signout": "Sign out",
+            "tooltip_settings": "Settings",
+            "settings_title": "Settings",
+            "settings_language": "Language",
+            "lang_vi": "Vietnamese",
+            "lang_en": "English",
+            "replying_to": "Replying to",
+            "notif": {
+                "signin_required": "Please sign in to reply",
+                "send_success": "Successfully to send message",
+                "send_failed": "Failed to send message",
+                "delete_success": "Successfully to delete message",
+                "delete_failed": "Failed to delete message"
+            },
+            "provider_google": "Google",
+            "provider_github": "Github"
+        }
+    },
+    
+    "Hero": {
+        "journey": "Tarot Journey",
+        "title": "Discover Your \n Destiny",
+        "description": "Uncover intuition, decode love, career, and your future through mystical tarot readings.",
+        "button_reading": "Get Reading Now",
+        "button_meaning": "Explore Meanings"
+    },
+
+    "Featured": {
+        "title": "Special Readings",
+        "description": "Readings specifically designed to answer every aspect of your life, from emotions to career.",
+        "start_now": "Start Now",
+        "love": {
+            "title": "Love",
+            "desc": "Explore romance and relationships."
+        },
+        "work": {
+            "title": "Career",
+            "desc": "Career guidance and advancement path."
+        },
+        "finance": {
+            "title": "Finance",
+            "desc": "Recognize luck and wealth management."
+        },
+        "health": {
+            "title": "Health",
+            "desc": "Predict trends and upcoming changes."
+        }
+    },
+
+    "Works": {
+        "title": "Reading Process",
+        "step1": {
+            "title": "Choose Theme",
+            "desc": "Select the area you are concerned about (Love, work, finance...)"
+        },
+        "step2": {
+            "title": "Draw Cards",
+            "desc": "Focus your mind and use your intuition to pick the cards."
+        },
+        "step3": {
+            "title": "Get Interpretation",
+            "desc": "Listen to mystical messages and advice from Tarot."
+        }
+    },
+
+    "Final": {
+        "title": "Ready to Open the Door?",
+        "description": "Don't let worries stop your steps. The cards are waiting to tell you your own story.",
+        "button": "Free Reading Now"
+    },
+
+    "Tarot": {
+        "the_fool": {
+        "name": "The Fool",
+        "meaning": {
+            "upright": "New beginnings, freedom, innocence",
+            "reversed": "Recklessness, risk-taking"
+        }
+        },
+        "the_magician": {
+        "name": "The Magician",
+        "meaning": {
+            "upright": "Power, skill, action",
+            "reversed": "Manipulation, illusion"
+        }
+        },
+        "the_high_priestess": {
+        "name": "The High Priestess",
+        "meaning": {
+            "upright": "Intuition, mystery",
+            "reversed": "Hidden agendas, disconnected"
+        }
+        },
+        "the_empress": {
+        "name": "The Empress",
+        "meaning": {
+            "upright": "Nurturing, abundance",
+            "reversed": "Dependence, smothering"
+        }
+        },
+        "the_emperor": {
+        "name": "The Emperor",
+        "meaning": {
+            "upright": "Authority, structure",
+            "reversed": "Control issues, rigidity"
+        }
+        },
+        "the_hierophant": {
+        "name": "The Hierophant",
+        "meaning": {
+            "upright": "Tradition, guidance",
+            "reversed": "Rebellion, unconventional"
+        }
+        },
+        "the_lovers": {
+        "name": "The Lovers",
+        "meaning": {
+            "upright": "Love, harmony",
+            "reversed": "Imbalance, misalignment"
+        }
+        },
+        "the_chariot": {
+        "name": "The Chariot",
+        "meaning": {
+            "upright": "Control, success",
+            "reversed": "Lack of direction"
+        }
+        },
+        "strength": {
+        "name": "Strength",
+        "meaning": {
+            "upright": "Courage, patience",
+            "reversed": "Self-doubt"
+        }
+        },
+        "the_hermit": {
+        "name": "The Hermit",
+        "meaning": {
+            "upright": "Soul searching",
+            "reversed": "Isolation"
+        }
+        },
+        "wheel_of_fortune": {
+        "name": "Wheel of Fortune",
+        "meaning": {
+            "upright": "Luck, destiny",
+            "reversed": "Bad luck"
+        }
+        },
+        "justice": {
+        "name": "Justice",
+        "meaning": {
+            "upright": "Fairness, truth",
+            "reversed": "Dishonesty"
+        }
+        },
+        "the_hanged_man": {
+        "name": "The Hanged Man",
+        "meaning": {
+            "upright": "Letting go",
+            "reversed": "Stalling"
+        }
+        },
+        "death": {
+        "name": "Death",
+        "meaning": {
+            "upright": "Transformation",
+            "reversed": "Resistance to change"
+        }
+        },
+        "temperance": {
+        "name": "Temperance",
+        "meaning": {
+            "upright": "Balance",
+            "reversed": "Imbalance"
+        }
+        },
+        "the_devil": {
+        "name": "The Devil",
+        "meaning": {
+            "upright": "Addiction, attachment",
+            "reversed": "Freedom, release"
+        }
+        },
+        "the_tower": {
+        "name": "The Tower",
+        "meaning": {
+            "upright": "Sudden change",
+            "reversed": "Avoiding disaster"
+        }
+        },
+        "the_star": {
+        "name": "The Star",
+        "meaning": {
+            "upright": "Hope, faith",
+            "reversed": "Despair"
+        }
+        },
+        "the_moon": {
+        "name": "The Moon",
+        "meaning": {
+            "upright": "Illusion, fear",
+            "reversed": "Clarity"
+        }
+        },
+        "the_sun": {
+        "name": "The Sun",
+        "meaning": {
+            "upright": "Joy, success",
+            "reversed": "Temporary sadness"
+        }
+        },
+        "judgement": {
+        "name": "Judgement",
+        "meaning": {
+            "upright": "Awakening",
+            "reversed": "Self-doubt"
+        }
+        },
+        "the_world": {
+        "name": "The World",
+        "meaning": {
+            "upright": "Completion",
+            "reversed": "Lack of closure"
+        }
+    }
+}
+}
