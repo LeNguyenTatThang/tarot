@@ -71,7 +71,7 @@ const FinanceScreen = () => {
       <button
         disabled={!isReady}
         className={`
-            fixed bottom-10 left-1/2 -translate-x-1/2 px-8 py-3 rounded-full shadow-2xl transition-all z-[110]
+            fixed bottom-10 left-1/2 -translate-x-1/2 px-8 py-3 rounded-full shadow-2xl transition-all z-110
             ${isReady
             ? "bg-mystic-purple hover:scale-105 hover:shadow-mystic-purple/50"
             : "bg-gray-700 cursor-not-allowed opacity-50"

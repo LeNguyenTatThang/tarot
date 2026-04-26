@@ -49,7 +49,7 @@ const TarotCarousel = ({ maxPick }: tarotStackProps) => {
     <div className="w-full flex flex-col items-center pt-6 text-white relative">
       {isDone === false &&
         <div className="mb-6 font-serif text-mystic-gold bg-white/5 px-6 py-2 rounded-full border border-white/10">
-          ÄÃ£ chá»n: <span className="text-white font-bold">{selectedIndexes.length}</span> / {maxPick}
+          Cards Picked: <span className="text-white font-bold">{selectedIndexes.length}</span> / {maxPick}
         </div>
       }
 
@@ -105,7 +105,7 @@ const TarotCarousel = ({ maxPick }: tarotStackProps) => {
                 animate={{ rotateY: isFlip ? 180 : 0 }}
                 transition={{ duration: 0.7, ease: "backOut" }}
                 style={{ transformStyle: "preserve-3d" }}
-                className="relative w-[120px] h-[180px] md:w-[150px] md:h-[220px]"
+                className="relative w-30 h-45 md:w-37/5 md:h-55"
               >
                 <div
                   className="absolute inset-0 z-10"
