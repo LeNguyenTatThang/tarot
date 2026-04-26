@@ -1,36 +1,158 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔮 Tarot Reading Web App
 
-## Getting Started
+A modern, interactive Tarot Reading web application built with Next.js. Explore tarot spreads, receive AI-powered interpretations, and discover insights about love, career, finance, and health through an immersive mystical experience.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+* 🎴 Interactive tarot card selection and animations
+* 🤖 AI-generated tarot interpretations
+* 💖 Specialized readings for Love, Career, Finance, and Health
+* 🌌 Beautiful mystical UI with smooth transitions
+* 📱 Fully responsive design for desktop, tablet, and mobile
+* ⚡ Built with high performance and SEO optimization in mind
+
+---
+
+## 🚀 Tech Stack
+
+* **Framework:** Next.js 16
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **Animation:** Framer Motion
+* **Authentication:** NextAuth.js
+* **Database:** Supabase
+* **AI Integration:** OpenAI API
+* **State Management:** Zustand
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/LeNguyenTatThang/tarot.git
+cd tarot
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env.local` file in the project root and add the required environment variables:
+
+```env
+NEXTAUTH_URL=
+NEXTAUTH_SECRET=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+OPENAI_API_KEY=
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+```
+
+### 4. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Available Scripts
 
-## Learn More
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run start    # Run production build
+npm run lint     # Run ESLint
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+src/
+├── app/                # Next.js App Router
+├── components/         # Reusable UI components
+├── modules/            # Feature-based modules
+├── lib/                # Utilities and configurations
+├── store/              # Zustand state management
+├── types/              # TypeScript type definitions
+└── hooks/              # Custom React hooks
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔐 Environment Variables
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Make sure the following services are configured:
+
+* Supabase project credentials
+* OpenAI API key
+* Google OAuth credentials (optional)
+* NextAuth secret
+
+---
+
+## 🚀 Deployment
+
+This project is optimized for deployment on Vercel.
+
+```bash
+npm run build
+```
+
+Then deploy using:
+
+* Vercel (recommended)
+* Docker
+* Any Node.js hosting platform
+
+---
+
+## 📸 Highlights
+
+* Immersive tarot reading experience
+* Dynamic card animations
+* Personalized AI insights
+* Elegant mystical design system
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome.
+
+1. Fork the project
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 💫 Acknowledgements
+
+* Next.js Team
+* Vercel
+* OpenAI
+* Supabase
+* Framer Motion
+
+Built with passion for tarot, technology, and meaningful experiences.
