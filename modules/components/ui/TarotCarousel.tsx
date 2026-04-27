@@ -105,7 +105,7 @@ const TarotCarousel = ({ maxPick }: tarotStackProps) => {
                 animate={{ rotateY: isFlip ? 180 : 0 }}
                 transition={{ duration: 0.7, ease: "backOut" }}
                 style={{ transformStyle: "preserve-3d" }}
-                className="relative w-30 h-45 md:w-37/5 md:h-55"
+                className="relative w-[120px] h-[180px] md:w-[160px] md:h-[240px]"
               >
                 <div
                   className="absolute inset-0 z-10"

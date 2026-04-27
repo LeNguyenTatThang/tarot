@@ -6,7 +6,7 @@ const Final = () => {
   const t = useTranslations("Final")
 
   return (
-    <section className="py-32 relative">
+    <section className="py-16 md:py-32 relative">
       <div className="container mx-auto px-6">
         <div className="reveal-item glass-morphism rounded-[4rem] p-16 md:p-32 text-center relative overflow-hidden">
           <div className="absolute inset-0 z-0 opacity-10 blur-sm">

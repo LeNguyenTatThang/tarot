@@ -52,7 +52,7 @@ const FeaturedReading = () => {
     ]
 
   return (
-    <section className="py-32 relative parallax-section overflow-hidden">
+    <section className="py-16 md:py-32 relative parallax-section overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="parallax-bg absolute top-0 left-0 w-full h-full">
           <Image
@@ -77,8 +77,8 @@ const FeaturedReading = () => {
             <div className="w-32 h-1 bg-mystic-gold mt-8 rounded-full opacity-50 mx-auto lg:mx-0"></div>
           </div>
 
-          <div className="lg:w-1/3 flex justify-center reveal-item">
-            <div className="scale-75 origin-center">
+          <div className="lg:w-1/3 flex justify-center reveal-item w-full h-[300px] lg:h-[450px]">
+            <div className="scale-75 md:scale-90 lg:scale-100 origin-center w-full h-full">
               <TarotCard />
             </div>
           </div>

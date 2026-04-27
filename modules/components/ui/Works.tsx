@@ -5,7 +5,7 @@ const Works = () => {
   const t = useTranslations("Works")
 
   return (
-    <section className="py-32 relative overflow-hidden section-fade">
+    <section className="py-16 md:py-32 relative overflow-hidden section-fade">
       <div className="absolute inset-0 z-0">
         <Image
           src="/img/image2.png"
@@ -16,7 +16,7 @@ const Works = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-20">
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
           <div className="lg:w-1/2">
             <h2 className="font-serif text-4xl md:text-6xl gold-text mb-12 reveal-item">{t("title")}</h2>
             <div className="space-y-12">
@@ -35,8 +35,8 @@ const Works = () => {
               ))}
             </div>
           </div>
-          <div className="lg:w-1/2 relative reveal-item">
-            <div className="relative h-150 w-full rounded-4xl overflow-hidden border border-mystic-gold/20 shadow-[0_0_50px_rgba(107,33,168,0.3)]">
+          <div className="lg:w-1/2 relative reveal-item w-full">
+            <div className="relative aspect-square md:aspect-auto md:h-[600px] w-full rounded-3xl md:rounded-4xl overflow-hidden border border-mystic-gold/20 shadow-[0_0_50px_rgba(107,33,168,0.3)]">
               <Image
                 src="/img/image2.png"
                 alt="Tarot Scene Detail"

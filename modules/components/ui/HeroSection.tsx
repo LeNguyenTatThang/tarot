@@ -64,7 +64,7 @@ const HeroSection = () => {
             </motion.div>
           </div>
           
-          <div className="lg:w-1/2 flex justify-center items-center h-125 order-2">
+          <div className="lg:w-1/2 flex justify-center items-center h-[400px] lg:h-[600px] order-2 w-full max-w-sm lg:max-w-none">
             <TarotCard />
           </div>
         </div>

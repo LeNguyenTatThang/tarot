@@ -239,5 +239,10 @@
             "reversed": "Lack of closure"
         }
     }
-}
+    },
+    "Modal": {
+        "close": "Close",
+        "watting": "Waiting for reading result...",
+        "result": "Your Tarot Reading Result"
+    }
 }

@@ -13,8 +13,8 @@ export default function TarotCard() {
     const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000)
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
     
-    const width = 350
-    const height = 550
+    let width = containerRef.current.clientWidth
+    let height = containerRef.current.clientHeight
     renderer.setSize(width, height)
     containerRef.current.appendChild(renderer.domElement)
 
@@ -55,6 +55,19 @@ export default function TarotCard() {
       mouseY = (event.clientY - rect.top - height / 2) / 100
     }
 
+    const handleResize = () => {
+      if (!containerRef.current) return
+      width = containerRef.current.clientWidth
+      height = containerRef.current.clientHeight
+      
+      renderer.setSize(width, height)
+      camera.aspect = width / height
+      camera.updateProjectionMatrix()
+    }
+
+    const resizeObserver = new ResizeObserver(handleResize)
+    resizeObserver.observe(containerRef.current)
+
     window.addEventListener("mousemove", handleMouseMove)
 
     const animate = () => {
@@ -73,6 +86,7 @@ export default function TarotCard() {
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove)
+      resizeObserver.disconnect()
       containerRef.current?.removeChild(renderer.domElement)
     }
   }, [])
@@ -80,8 +94,7 @@ export default function TarotCard() {
   return (
     <div 
       ref={containerRef} 
-      className="relative cursor-pointer transition-all duration-500 hover:scale-110 drop-shadow-[0_0_30px_rgba(212,175,55,0.3)]"
-      style={{ width: "350px", height: "550px" }}
+      className="relative cursor-pointer transition-all duration-500 hover:scale-110 drop-shadow-[0_0_30px_rgba(212,175,55,0.3)] w-full h-full"
     />
   )
 }
