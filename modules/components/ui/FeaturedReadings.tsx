@@ -52,7 +52,7 @@ const FeaturedReading = () => {
     ]
 
   return (
-    <section className="py-16 md:py-32 relative parallax-section overflow-hidden">
+    <section id="readings" className="py-16 md:py-20 relative parallax-section overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="parallax-bg absolute top-0 left-0 w-full h-full">
           <Image
@@ -66,7 +66,7 @@ const FeaturedReading = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between mb-24 gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between mb-10 gap-12">
           <div className="lg:w-2/3 text-center lg:text-left reveal-item">
             <h2 className="font-serif text-3xl md:text-6xl gold-text mb-6">
               {t("title")}

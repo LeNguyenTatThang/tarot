@@ -49,6 +49,21 @@ const HeroSection = () => {
                 <motion.button
                   whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(107,33,168,0.4)" }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => {
+                    const element = document.getElementById("readings");
+                    if (element) {
+                      const offset = 170;
+                      const bodyRect = document.body.getBoundingClientRect().top;
+                      const elementRect = element.getBoundingClientRect().top;
+                      const elementPosition = elementRect - bodyRect;
+                      const offsetPosition = elementPosition + offset;
+
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                      });
+                    }
+                  }}
                   className="px-12 py-5 rounded-full bg-mystic-purple text-white font-bold transition-all glow-text"
                 >
                   {t("button_reading")}
@@ -56,6 +71,7 @@ const HeroSection = () => {
                 <motion.button
                   whileHover={{ scale: 1.05, backgroundColor: "rgba(212,175,55,0.1)" }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => document.getElementById("explore")?.scrollIntoView({ behavior: "smooth" })}
                   className="px-12 py-5 rounded-full border border-mystic-gold/50 text-mystic-gold font-bold transition-all"
                 >
                   {t("button_meaning")}
@@ -63,7 +79,7 @@ const HeroSection = () => {
               </div>
             </motion.div>
           </div>
-          
+
           <div className="lg:w-1/2 flex justify-center items-center h-[400px] lg:h-[600px] order-2 w-full max-w-sm lg:max-w-none">
             <TarotCard />
           </div>

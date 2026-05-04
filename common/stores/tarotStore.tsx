@@ -5,6 +5,7 @@ import { TarotSpreadCard } from '@/common/types/tarot'
 type TarotType = "love" | "study" | "health" | "work" | "finance"
 
 type TarotData = {
+    question: string
     selectedIndexes: number[]
     spreadCards: TarotSpreadCard[]
     flipped: number[]
@@ -15,6 +16,7 @@ type TarotState = TarotData & {
     history: Record<string, TarotData>
 
     setType: (type: TarotType) => void
+    setQuestion: (question: string) => void
     setSelectedIndexes: (selectedIndexes: number[]) => void
     setSpreadCards: (spreadCards: TarotSpreadCard[]) => void
     setFlipped: (flipped: number[]) => void
@@ -22,6 +24,7 @@ type TarotState = TarotData & {
 }
 
 const initialData: TarotData = {
+    question: "",
     selectedIndexes: [],
     spreadCards: [],
     flipped: [],
@@ -35,12 +38,12 @@ export const useTarotStore = create<TarotState>()(
             history: {},
 
             setType: (newType) => {
-                const { type, selectedIndexes, spreadCards, flipped, history } = get()
+                const { type, question, selectedIndexes, spreadCards, flipped, history } = get()
                 
                 // Save current state to history before switching
                 const updatedHistory = {
                     ...history,
-                    [type]: { selectedIndexes, spreadCards, flipped }
+                    [type]: { question, selectedIndexes, spreadCards, flipped }
                 }
 
                 // Load new state from history or use initial data
@@ -53,6 +56,7 @@ export const useTarotStore = create<TarotState>()(
                 })
             },
 
+            setQuestion: (question) => set({ question }),
             setSelectedIndexes: (selectedIndexes) => set({ selectedIndexes }),
             setSpreadCards: (spreadCards) => set({ spreadCards }),
             setFlipped: (flipped) => set({ flipped }),

@@ -24,7 +24,7 @@ const Providers = [
 const ChatAuth = ({ isWidget = false }) => {
     const t = useTranslations("ChatRoomPage")
     return (
-        <div className="flex flex-col border-t border-neutral-300 py-1 dark:border-neutral-900">
+        <div className="flex flex-col flex-1 border-t border-neutral-300 py-1 dark:border-neutral-900">
             <div className="mb-1 space-y-5 px-4 py-3 text-center text-neutral-700 dark:text-neutral-400">
                 <div
                     className={clsx(

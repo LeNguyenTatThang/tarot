@@ -17,49 +17,49 @@ export const POST = async (req: Request) => {
         {
           role: "system",
           content: `
-                    Báº¡n lÃ  chuyÃªn gia tarot.
+                    Bạn là một chuyên gia về Tarot.
 
-                    HÃ£y tráº£ lá»i theo format rÃµ rÃ ng, dá»… Ä‘á»c, KHÃ”NG dÃ¹ng báº£ng markdown.
+                    Hãy trả lời theo format rõ ràng, dễ đọc, KHÔNG dùng bảng markdown.
 
-                    Format báº¯t buá»™c:
+                    Format bắt buộc:
 
-                    ðŸ”® Káº¾T QUáº¢ TRáº¢I BÃ€I
+                    📌 KẾT QUẢ TRẢI BÀI
 
-                    1. Tá»”NG QUAN
-                    - Viáº¿t 3-5 dÃ²ng tÃ³m táº¯t
+                    1. TỔNG QUAN
+                    - Viết 3-5 dòng tóm tắt
 
-                    2. Ã NGHÄ¨A Tá»ªNG LÃ
-                    - Má»—i lÃ¡:
-                    [1] TÃªn lÃ¡ (xuÃ´i/ngÆ°á»£c)
-                    â†’ Ã nghÄ©a ngáº¯n gá»n (2-3 dÃ²ng)
+                    2. Ý NGHĨA TỪNG LÁ 
+                    - Mỗi lá:
+                    [1] Tên lá (ngược/xuôi)
+                    → Ý nghĩa ngắn gọn (2-3 dòng)
 
-                    3. DIá»„N BIáº¾N CHÃNH
-                    - Viáº¿t dáº¡ng bullet (3-5 Ã½)
+                    3. DIỄN BIẾN CHÍNH
+                    - Viết dạng bullet (3-5 ý)
 
-                    4. Lá»œI KHUYÃŠN
-                    - Bullet rÃµ rÃ ng, dá»… Ã¡p dá»¥ng
+                    4. LỜI KHUYÊN
+                    - Bullet rõ ràng, dễ áp dụng
 
-                    5. Káº¾T LUáº¬N
-                    - 2-3 dÃ²ng ngáº¯n, dá»… nhá»›
+                    5. KẾT LUẬN
+                    - 2-3 dòng ngắn, dễ nhớ
 
-                    YÃªu cáº§u:
-                    - Ngáº¯n gá»n, dá»… Ä‘á»c trÃªn mobile
-                    - KhÃ´ng dÃ¹ng báº£ng
-                    - KhÃ´ng quÃ¡ dÃ i
+                    Yêu cầu:
+                    - Ngắn gọn, dễ đọc trên mobile
+                    - Không dùng bảng
+                    - Không quá dài
                     `
         },
         {
           role: "user",
           content: `
-          CÃ¢u há»i: ${question}
+          Câu hỏi: ${question}
 
-          LÃ¡ bÃ i:
+          Lá bài:
           ${cards
-            ?.map(
-              (c: { name: string; isReversed: boolean }, i: number) =>
-                `${i + 1}. ${c.name} (${c.isReversed ? "ngÆ°á»£c" : "xuÃ´i"})`
-            )
-            .join("\n")}
+              ?.map(
+                (c: { name: string; isReversed: boolean }, i: number) =>
+                  `${i + 1}. ${c.name} (${c.isReversed ? "ngược" : "xuôi"})`
+              )
+              .join("\n")}
           `
         }
       ],

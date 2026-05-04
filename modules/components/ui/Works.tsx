@@ -5,7 +5,7 @@ const Works = () => {
   const t = useTranslations("Works")
 
   return (
-    <section className="py-16 md:py-32 relative overflow-hidden section-fade">
+    <section id="explore" className="py-16 md:py-32 relative overflow-hidden section-fade">
       <div className="absolute inset-0 z-0">
         <Image
           src="/img/image2.png"
